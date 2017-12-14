@@ -1,3 +1,4 @@
+var port = process.env.PORT || 3006;
 var express = require('express');
 var hbs = require('hbs');
 var app = express();
@@ -35,4 +36,6 @@ app.get('/bad',(req,res)=>{
 	})
 });
 
-app.listen('3005');
+app.listen(port,()=>{
+	console.log("app is running at port "+port);
+});
