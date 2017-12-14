@@ -10,7 +10,6 @@ hbs.registerHelper('makeUpperCase',(text)=>{ //reusability of function
 
 app.set("view engine" , "hbs"); //while rendering chekcs in views folder
 app.use((req,res,next)=>{
-	res.render('maintainance.hbs')
 	next();
 
 })
